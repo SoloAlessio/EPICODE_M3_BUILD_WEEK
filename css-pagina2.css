@@ -1,0 +1,14 @@
+.plus-icon {
+bottom:6px;
+left: 6px;
+  }
+body {
+font-size: 14px;
+}
+.card-body {
+font-size:12px;
+}
+.rounded-circle {
+height:30px;
+width: 30px;
+}
