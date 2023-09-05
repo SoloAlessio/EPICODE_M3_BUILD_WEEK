@@ -4,13 +4,229 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/CSS/Giuseppe.css">
+    <link rel="icon" href="./assets/IMGS/icona-top-corner.png">
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <!--Navbar-->
+    
+    <nav class="navbar  navbar-expand-lg navbar-light bg-white mt-2 mx-5 ">
+      <div class="container-fluid  ">
+        <a class="navbar-brand" href="#"><img src="./assets/IMGS/logo-pink.png" width="120px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse  navbar-collapse   " id="navbarText">
+          <div class="mx-auto me-2 mb-2 mb-lg-0 d-flex align-items-center gap-2">
+          <span class="navbar-text pe-3">
+              Become a host
+            </span>
+          <a href="#"><i class="bi bi-globe pe-3 text-black "></i></a>
+          <a href="#"><i class="bi bi-list pe-1 text-secondary"></i></a>
+          <a href="#"><i class="bi bi-person-circle text-black-50"></i></a>
+          </div>
+        </div>
+      </div>
+    </nav>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<!-- Section -->
+<!-- <section class="mt-4 mx-5">
+  <div class="container-lg">
+    
+      <h1 class="h3">Blarmor home</h1>
+      <div class="row justify-content-between mb-4 ">
+        <div class=" col-md-4 ">
+          <span>4.6 ratings</span>
+          <span>Inverness</span>
+        </div>
+        <div class=" col-md-4   ">
+          <i class="bi bi-box-arrow-up">Share</i>
+          <i class="bi bi-heart">Save</i>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row g-md-2 ">
+          <div class="col-md-6 ">
+            <img src="./assets/IMGS/1.webp" alt="" class="w-100 rounded-start-4 img-fluid d-block">
+          </div>
+          <div class="col-md-6  ">
+            <div class="row g-md-2">
+              <div class="col-md-6 ">
+                <img src="./assets/IMGS/2.webp" class="w-auto img-fluid d-block d-none d-md-block" alt="">
+              </div>
+              <div class="col-md-6 ">
+                <img src="./assets/IMGS/3.webp" class=" w-auto img-fluid rounded-end-4 d-block d-none d-md-block" alt="">
+              </div>
+            </div>
+            <div class="row g-md-2 mt-md-0">
+              <div class="col-md-6 ">
+                <img src="./assets/IMGS/4.webp" class="w-auto img-fluid d-block d-none d-md-block" alt="">
+              </div>
+              <div class="col-md-6 ">
+                <img src="./assets/IMGS/5.webp" class=" w-auto img-fluid rounded-end-4 d-block d-none d-md-block" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+  
+</section>  -->
+
+<section class="mt-4 mb-5">
+  <div class="container-lg mx-md-auto">
+      <h1 class="h3">Blarmor home</h1>
+      <div class="row justify-content-between mb-4 mx-auto">
+        <div class=" col-md-4 ">
+          <span>4.6 ratings · Inverness</span>
+          
+        </div>
+        <div class=" col-md-4   ">
+          <i class="bi bi-box-arrow-up">Share</i>
+          <i class="bi bi-heart">Save</i>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row g-md-2">
+          <div class="col-md-6">
+            <img src="./assets/IMGS/1.webp" alt="" class=" rounded-start-4 h-100 w-100 d-block">
+          </div>
+          <div class="col-md-4 ">
+            <div class="row g-md-2">
+              <div class="col-md-6">
+                <img src="./assets/IMGS/2.webp" class="d-none d-md-block  img-fluid w-100 d-block " alt="">
+              </div>
+              <div class="col-md-6">
+                <img src="./assets/IMGS/3.webp" class="d-none d-md-block  img-fluid rounded-end-4 w-100 d-block " alt="">
+              </div>
+            </div>
+            <div class="row g-md-2 mt-md-0">
+              <div class="col-md-6">
+                <img src="./assets/IMGS/4.webp" class="d-none d-md-block  img-fluid w-100 d-block " alt="">
+              </div>
+              <div class="col-md-6">
+                <img src="./assets/IMGS/5.webp" class="d-none d-md-block  img-fluid rounded-end-4 w-100 d-block " alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        </div>
+    </section> 
+<section class="mt-4">
+  <div class="container-lg">
+    <div class="row">
+      <div class="col-md-6">
+      <h3 class="h3">House - Host: Erica</h3>
+      <p>3 rooms · Perfect place to visit the Loch Ness and go looking for Nessia</p>
+      <p class="text-muted fw-bold">Show host details</p>
+      <div class="row">
+      <i class="bi bi-house-door"></i>
+      <h5>House</h5>
+      <span>You will have the whole premise for you</span>
+    </div>
+    <div class="row">
+      <i class="bi bi-stars"></i>
+      <h5>Advanced Cleaning Methods</h5>
+      <span>The hose is committing to our 5-step cleaning process</span>
+    </div>
+    <div class="row">
+      <i class="bi bi-geo-alt"></i>
+      <h5>Inverness</h5>
+      <span>5 Kilmore Rd</span>
+    </div>
+    <div class="row">
+      <i class="bi bi-calendar3"></i>
+      <h5>Cancellation Terms And Fees</h5>
+      <span>Add your travel dates to know details about cancellation fees and terms.</span>
+    </div>
+    <div class="row">
+      <i class="bi bi-book"></i>
+      <h5>Rules Of The House</h5>
+      <span>It's forbidden to host parties,bring animals and smoke.</span>
+    </div>
+    </div>
+    <div class="d-flex justify-content-center col-md-6">
+      <form>
+        <div class="container rounded-5 w-75 shadow-lg p-4 mt-5">
+          <div class="row  justify-content-center">
+          <h2 class="mb-3 d-inline-block h5">Add dates to see the prices</h2>
+          <i class="bi bi-star-fill"></i>
+          <span> 4.0, 6 reviews</span>
+        </div>
+          <div class="row mb-3">
+            <div class="col">
+              <label for="checkInDate" class="form-label">Check-in</label>
+              <input type="date" class="form-control" id="checkInDate">
+            </div>
+            <div class="col">
+              <label for="checkOutDate" class="form-label">Check-out</label>
+              <input type="date" class="form-control" id="checkOutDate">
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col">
+              <label for="numGuests" class="form-label">Ospiti</label>
+              <input type="number" class="form-control" id="numGuests">
+            </div>
+          </div>
+          <button type="submit" class="btn btn-danger w-100">Search</button>
+        </div>
+      </form>
+      
+      
+    </div>
+    </div>
+
+    <!--Form end page-->
+    <form>
+      <div class="row">
+      <div class="mb-3 col-8">
+        <label for="nameInput" class="form-label">Name</label>
+        <input type="text" class="form-control" id="nameInput">
+      </div>
+      <div class="mb-3 col">
+        <label for="ratingSelect" class="form-label">Rating</label>
+        <select class="form-select" id="ratingSelect">
+          <option selected>Choose</option>
+          <option value="1">1 Star</option>
+          <option value="2">2 Stars</option>
+          <option value="3">3 Stars</option>
+          <option value="4">4 Stars</option>
+          <option value="5">5 Stars</option>
+        </select>
+      </div>
+      <div class="mb-3 col-12 h-100">
+        <label for="commentTextarea" class="form-label">Review</label>
+        <textarea class="form-control" id="commentTextarea" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-danger w-25 mx-auto" onclick="alert('Your review as been send')">Send</button>
+    </div>
+    </form>
+  
+  </div>
+  </div>
+  
+
+ 
+</section>
+ 
+
+    
+   <!--Footer -->
+   <footer class="container mt-5 pt-5">
+    <hr class="bg-primary">
+    <ul class="list-unstyled d-flex gap-3">
+      <li> © 2023 Airbnb, Inc.</li>
+      <li> Termini</li>
+      <li> Mappa del sito</li>
+      <li> Privacy</li>
+    </ul>
+  </footer>  
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>
