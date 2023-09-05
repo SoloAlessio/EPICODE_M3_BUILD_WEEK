@@ -1,20 +1,28 @@
 .plus-icon {
-bottom:6px;
-left: 6px;
-  }
+  bottom: 6px;
+  left: 6px;
+}
+
 body {
-font-size: 14px;
+  font-size: 14px;
 }
+
 .card-body {
-font-size:12px;
+  font-size: 12px;
 }
+
 .rounded-circle {
-height:30px;
-width: 30px;
+  height: 30px;
+  width: 30px;
 }
-.bi-heart {
-  top:5px;
-  right:5px;
-  color: white;
-  } 
-  
+
+.bi-heart-fill {
+  position: absolute;
+  top: 7px;
+  right: 8px;
+}
+
+.bi-heart-fill :hover {
+  fill: #e41d56;
+  transition: opacitity 0.5s ease;
+}
