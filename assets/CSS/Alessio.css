@@ -1,5 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif !important;
+}
+
 ul li{
     list-style-type: none;
+}
+
+input:focus{
+    outline: none !important;
 }
 
 nav{
@@ -36,10 +46,25 @@ a{
 
 #header input::placeholder{
     color: grey;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 #header h1{
-    font-size: 100px;
-    line-height: 90%;
+    font-size: 80px;
+    line-height: 85%;
+}
+main .card{
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+
+main .card:hover{
+    transform: scale(1.1);
+}
+
+main .card img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
 }

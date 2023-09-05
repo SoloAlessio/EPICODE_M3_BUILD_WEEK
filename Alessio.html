@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>AirBnB</title>
+    <link rel="icon" href="./assets/IMGS/icona-top-corner.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/CSS/Alessio.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -12,28 +13,44 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg" style="background-color: #000;">
+    <nav class="navbar navbar-dark navbar-expand-lg" style="background-color: #000;">
         <div class="container d-flex">
             <a class="navbar-brand" href="#">
                 <img src="assets/IMGS/logo.png" height="40">
             </a>
-            <div class="collapse navbar-collapse justify-content-between align-items-center" id="navbarSupportedContent">
+            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between align-items-center"
+                id="navbarSupportedContent">
                 <div></div>
-                <ul class="d-flex m-0">
-                    <li class="text-style-none text-white me-4">
+                <ul class="d-flex flex-column flex-lg-row m-0 p-0 text-center my-3 my-lg-0">
+                    <li class="text-style-none text-white me-0 me-lg-4 py-2">
                         <a href="#">Place to stay</a>
                     </li>
-                    <li class="text-style-none text-white me-4">
+                    <li class="text-style-none text-white me-0 me-lg-4 py-2">
                         <a href="#">Experiences</a>
                     </li>
-                    <li class="text-style-none text-white">
+                    <li class="text-style-none text-white py-2">
                         <a href="#">Online Experiences</a>
                     </li>
                 </ul>
-                <div class="account d-flex align-items-center">
+                <div class="account d-none d-lg-flex align-items-center">
                     <a href="#">Become a Host</a>
                     <i class="bi bi-globe text-white mx-3"></i>
-                    <div class="propic">
+                    <div class="d-flex align-items-center justify-content-evenly bg-light rounded-pill">
+                        <div class="dropdown">
+                            <button class="btn border-0" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="bi bi-list px-2"></i>
+                            </button>
+                            <ul class="dropdown-menu bg-dark dropdown-menu-center mt-2">
+                                <li><a class="dropdown-header" href="#">Ciao EPICODE</a></li>
+                                <li><a class="dropdown-item text-white" href="#">Action</a></li>
+                                <li><a class="dropdown-item text-white" href="#">Another action</a></li>
+                                <li><a class="dropdown-item text-white" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
                         <img src="assets/IMGS/propic.png" class="rounded-circle" height="42">
                     </div>
                 </div>
@@ -41,48 +58,214 @@
         </div>
     </nav>
 
-    <div class="p-5 pt-0 mb-4 mx-auto bg-body-tertiary" id="header">
-        <div class="container border rounded-pill p-2" style="background-color: #fff;">
+    <div class="p-5 pt-0 mb-5 mx-auto bg-body-tertiary" id="header">
+        <div class="container d-none d-md-block">
             <div class="row d-flex align-items-center">
-                <div class="col-4 d-flex flex-column align-items-start justify-content-between">
-                    <label for="">Location</label>
-                    <input class="border-0 mt-2" t type="text" placeholder="Where are you going?">
-                </div>
-                <div class="col-2 d-flex flex-column align-items-start justify-content-between">
-                    <label for="">Check-in</label>
-                    <input class="border-0 mt-2" t type="date" placeholder="Aggiungi data">
-                </div>
-                <div class="col-2 d-flex flex-column align-items-start justify-content-between">
-                    <label for="">Check-out</label>
-                    <input class="border-0 mt-2" t type="date" placeholder="Aggiungi data">
-                </div>
-                <div class="col-4 d-flex justify-content-between align-items-center">
-                    <div class="col-4 d-flex flex-column align-items-start justify-content-between">
-                        <label for="">Guests</label>
-                        <input class="border-0 mt-2" type="number" placeholder="Add guests">
+                <div class="col-0 col-lg-2"></div>
+                <div class="col-12 col-lg-8">
+                    <div class="row d-flex align-items-center rounded-pill p-2" style="background-color: #fff;">
+                        <div class="col-4 d-flex flex-column align-items-start justify-content-between">
+                            <label for="">Location</label>
+                            <input class="border-0 mt-2" t type="text" placeholder="Where are you going?">
+                        </div>
+                        <div class="col-2 d-flex flex-column align-items-start justify-content-between">
+                            <label for="">Check-in</label>
+                            <input class="border-0 mt-2 me-2" type="date" style="color: grey; font-size: 14px;">
+                        </div>
+                        <div class="col-2 d-flex flex-column align-items-start justify-content-between">
+                            <label for="">Check-out</label>
+                            <input class="border-0 mt-2 me-2" type="date" style="color: grey; font-size: 14px;">
+                        </div>
+                        <div class="col-3 d-flex flex-column align-items-start justify-content-between">
+                            <div class="col-4 d-flex flex-column align-items-start justify-content-between">
+                                <label for="">Guests</label>
+                                <input class="border-0 mt-2" type="number" placeholder="Add guests">
+                            </div>
+                        </div>
+                        <div class="col-1 d-flex align-items-center justify-content-end pe-0">
+                            <div class="rounded-circle d-flex justify-content-center align-items-center p-1"
+                                style="background-color: #e41d56; width: 50px; height: 50px;">
+                                <button class="btn button">
+                                    <i class="bi bi-search text-white"></i>
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                    <button
-                        class="btn button rounded-circle d-flex justify-content-center align-items-center bg-dark text-white">
-                        <i class="bi bi-search"></i>
-                    </button>
                 </div>
+                <div class="col-0 col-lg-2"></div>
             </div>
         </div>
-        <div class="container-fluid py-5">
-            <h1 class="display-5 fw-bold text-white mb-4">Go <br> Near</h1>
+        <div class="container-fluid d-flex flex-column justify-content-center align-items-start py-5">
+            <h1 class="display-5 fw-semibold text-white mb-4">Go <br> Near</h1>
             <button class="btn btn-light">Explore Nearby Stays</button>
         </div>
     </div>
 
+    <main>
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card mb-3 border-0" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-3">
+                                <a href="Jelena.html">
+                                    <img src="/assets/IMGS/main-page/1.jpg" class="img-fluid rounded-3" alt="...">
+                                </a>
+                            </div>
+                            <div class="col-9 d-flex">
+                                <div class="card-body px-0 px-md-3 py-0 d-flex flex-column justify-content-center">
+                                    <h5 class="card-title fw-bold mb-0">Genova</h5>
+                                    <p class="card-text"><small class="text-body-secondary">15 mins drive</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card mb-3 border-0" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-3">
+                                <a href="Jelena.html">
+                                    <img src="/assets/IMGS/main-page/2.jpg" class="img-fluid rounded-3" alt="...">
+                                </a>
+                            </div>
+                            <div class="col-9 d-flex">
+                                <div class="card-body px-0 px-md-3 py-0 d-flex flex-column justify-content-center">
+                                    <h5 class="card-title fw-bold mb-0">Inverness</h5>
+                                    <p class="card-text"><small class="text-body-secondary">2 hrs flight</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card mb-3 border-0" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-3">
+                                <a href="Jelena.html">
+                                    <img src="/assets/IMGS/main-page/3.jpg" class="img-fluid rounded-3" alt="...">
+                                </a>
+                            </div>
+                            <div class="col-9 d-flex">
+                                <div class="card-body px-0 px-md-3 py-0 d-flex flex-column justify-content-center">
+                                    <h5 class="card-title fw-bold mb-0">Edimburgh</h5>
+                                    <p class="card-text"><small class="text-body-secondary">1.5 hrs flight</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card mb-3 border-0" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-3">
+                                <a href="Jelena.html">
+                                    <img src="/assets/IMGS/main-page/1.jpg" class="img-fluid rounded-3" alt="...">
+                                </a>
+                            </div>
+                            <div class="col-9 d-flex">
+                                <div class="card-body px-0 px-md-3 py-0 d-flex flex-column justify-content-center">
+                                    <h5 class="card-title fw-bold mb-0">Rapallo</h5>
+                                    <p class="card-text"><small class="text-body-secondary">2 hrs drive</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card mb-3 border-0" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-3">
+                                <a href="Jelena.html">
+                                    <img src="/assets/IMGS/main-page/1.jpg" class="img-fluid rounded-3" alt="...">
+                                </a>
+                            </div>
+                            <div class="col-9 d-flex">
+                                <div class="card-body px-0 px-md-3 py-0 d-flex flex-column justify-content-center">
+                                    <h5 class="card-title fw-bold mb-0">Milan</h5>
+                                    <p class="card-text"><small class="text-body-secondary">1.5 hrs drive</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card mb-3 border-0" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-3">
+                                <a href="Jelena.html">
+                                    <img src="/assets/IMGS/main-page/1.jpg" class="img-fluid rounded-3" alt="...">
+                                </a>
+                            </div>
+                            <div class="col-9 d-flex">
+                                <div class="card-body px-0 px-md-3 py-0 d-flex flex-column justify-content-center">
+                                    <h5 class="card-title fw-bold mb-0">Montecarlo</h5>
+                                    <p class="card-text"><small class="text-body-secondary">2 hrs drive</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card mb-3 border-0" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-3">
+                                <a href="Jelena.html">
+                                    <img src="/assets/IMGS/main-page/1.jpg" class="img-fluid rounded-3" alt="...">
+                                </a>
+                            </div>
+                            <div class="col-9 d-flex">
+                                <div class="card-body px-0 px-md-3 py-0 d-flex flex-column justify-content-center">
+                                    <h5 class="card-title fw-bold mb-0">Kirkwall</h5>
+                                    <p class="card-text"><small class="text-body-secondary">1 hr drive</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card mb-3 border-0" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-3">
+                                <a href="Jelena.html">
+                                    <img src="/assets/IMGS/main-page/1.jpg" class="img-fluid rounded-3" alt="...">
+                                </a>
+                            </div>
+                            <div class="col-9 d-flex">
+                                <div class="card-body px-0 px-md-3 py-0 d-flex flex-column justify-content-center">
+                                    <h5 class="card-title fw-bold mb-0">Nordkapp</h5>
+                                    <p class="card-text"><small class="text-body-secondary">10 hrs flight</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="container mt-5 pt-5">
+        <hr class="bg-primary">
+        <ul class="list-unstyled d-flex gap-3">
+            <li> © 2023 Airbnb, Inc.</li>
+            <li> Termini</li>
+            <li> Mappa del sito</li>
+            <li> Privacy</li>
+        </ul>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+<!--     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
         integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
 </body>
 
 </html>
