@@ -1,0 +1,10 @@
+.image-container {
+    /* background-image: url(/assets/IMGS/1.webp); */
+    background-repeat: no-repeat;
+   background-size: cover;
+}
+
+
+body {
+    margin: 10px 100px;
+}
