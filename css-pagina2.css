@@ -26,3 +26,11 @@ body {
   fill: #e41d56;
   transition: opacitity 0.5s ease;
 }
+
+.card {
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.2);
+}
