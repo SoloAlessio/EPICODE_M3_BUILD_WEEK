@@ -12,15 +12,11 @@ input:focus{
     outline: none !important;
 }
 
-input[type="date"]::before{
-    display: none !important;
-}
-
-input[type="date"]::-webkit-inner-spin-button,
+/* input[type="date"]::-webkit-inner-spin-button,
 input[type="date"]::-webkit-calendar-picker-indicator {
     display: none;
     -webkit-appearance: none;
-}
+} */
 
 nav{
     font-size: 13px;
